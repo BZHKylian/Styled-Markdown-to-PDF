@@ -4,7 +4,7 @@ Licence MIT / MIT License
 Copyright © - 2025 BZHKylian
 
 -------------------------------------------------------------
-## <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="FR" width="20"> Version Française
+## <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/2048px-Flag_of_France.svg.png" alt="FR" width="20"> Version Française
 
 Droit d’utilisation libre et gratuit, accordé à toute personne obtenant une copie
 de ce logiciel et des fichiers de documentation associés (le « Logiciel »),
@@ -27,7 +27,7 @@ INTERACTIONS AVEC LE LOGICIEL.
 
 
 -------------------------------------------------------------
-##  <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="EN" width="20"> English Version
+##  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/2048px-Flag_of_the_United_Kingdom.svg.png" alt="EN" width="20"> English Version
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
