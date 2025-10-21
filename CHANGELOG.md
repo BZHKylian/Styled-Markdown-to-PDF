@@ -1,9 +1,14 @@
-# Change Log
+# Changelog
 
-All notable changes to the "BZHKylian" extension will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.1.0] - 2025-10-21
+### Added
+- Syntax highlighting for code blocks.
 
-## [Unreleased]
+### Changed
+- Fonts updated to allow text selection in PDFs.
 
-- Initial release
+## [1.0.0] - 2025-10-19
+### Added
+- Initial stable release.
