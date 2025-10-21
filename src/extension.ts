@@ -177,8 +177,6 @@ export function activate(context: vscode.ExtensionContext) {
       const cssFileUrl = `file://${cssPath.split(path.sep).join('/')}`;
 
       const hljsCssFile = isDarkMode ? 'github-dark.css' : 'github.css';
-      const hljsCssPath = path.join(__dirname, '..', 'node_modules', 'highlight.js', 'styles', hljsCssFile);
-      const hljsCssUrl = `file://${hljsCssPath.split(path.sep).join('/')}`;
 
 
       // Page de garde
@@ -213,7 +211,7 @@ export function activate(context: vscode.ExtensionContext) {
       <html lang="fr">
         <head>
           <meta charset="UTF-8">
-          <link rel="stylesheet" href="${hljsCssUrl}">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/${hljsCssFile}">
           <link rel="stylesheet" href="${cssFileUrl}">
         </head>
         <body class="${isDarkMode ? 'dark-mode' : ''}">
@@ -223,7 +221,7 @@ export function activate(context: vscode.ExtensionContext) {
             <div class="pdf-credit">
               Generated with <strong>${packageJson.displayName}</strong> <br>
               Version ${packageJson.version} — by <strong>${packageJson.publisher}</strong> <br>
-              <a href="https://lien-vers-extension">See the extension</a>
+              <a href="https://marketplace.visualstudio.com/items?itemName=BZHKylian.styled-markdown-pdf&ssr=false#overview">See the extension</a>
             </div>
           </div>
         </body>
@@ -231,6 +229,7 @@ export function activate(context: vscode.ExtensionContext) {
       const contentTempPath = path.join(baseDir, '_content.html');
       fs.writeFileSync(contentTempPath, contentHtmlFull, 'utf-8');
 
+      
       const pageContent = await browser.newPage();
       await pageContent.goto('file://' + contentTempPath, { waitUntil: 'networkidle0' });
       await pageContent.pdf({
@@ -239,7 +238,7 @@ export function activate(context: vscode.ExtensionContext) {
         printBackground: true,
         displayHeaderFooter: true,
         margin: { top: '70px', bottom: '60px', left: '30px', right: '30px' },
-        headerTemplate: `<div style="font-size:10px;width:100%;padding:5px 30px;color:#666;display:flex;align-items:center;justify-content:space-between;font-family:'Helvetica Neue', Arial, sans-serif;">
+        headerTemplate: `<div style="font-size:10px;width:100%;padding:0 30px;color:#666;display:flex;align-items:center;justify-content:space-between;font-family:'Helvetica Neue', Arial, sans-serif;">
           ${headerLogo ? `<img src="${headerLogo}" style="height:5em;object-fit:contain;">` : ''}
           <div style="text-align:center;flex:1;"><span style="font-size:11px;font-weight:bold;">${headerTitle}</span></div>
           ${headerDate ? `<span style="font-size:10px;color:#888;">${headerDate}</span>` : ''}

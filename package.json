@@ -1,7 +1,7 @@
 {
   "name": "styled-markdown-pdf",
   "displayName": "Styled Markdown to PDF",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "BZHKylian",
   "description": "Export Markdown files to styled PDF with cover page and syntax highlighting",
   "icon": "media/icon.png",
