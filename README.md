@@ -192,7 +192,15 @@ Description du problème.
 - Saut de ligne imparfait dans certains blocs de code
 
 ## Notes de version
-1.0.0 — Première version stable publiée.
+
+### Version 1.0.0 — Première version stable
+- Première version stable publiée.
+
+### Version 1.0.1 — Améliorations UI & Accessibilité
+- Mise en couleur des blocs de code pour une meilleure lisibilité.
+- Modification des polices pour permettre la sélection du texte dans les PDF.
+- Ajustements mineurs du CSS pour une cohérence visuelle améliorée.
+
 
 ## Licence
 Distribuée sous licence MIT.<br>
@@ -387,7 +395,13 @@ Problem description.
 - Minor line breaks inside some code blocks
 
 ## Release Notes
-1.0.0 — First stable release.
+### Version 1.0.0 — First Stable Release
+- Initial stable version published.
+
+### Version 1.0.1 — UI & Accessibility Improvements
+- Added syntax highlighting for code blocks to improve readability.  
+- Updated fonts to allow text selection in generated PDFs.  
+- Minor CSS adjustments for better visual consistency.
 
 ## License
 Distributed under the MIT License.<br>
